@@ -15,7 +15,22 @@ class Client
      * @var array
      */
     protected $classes = [
-        'debtors' => 'Debtors'
+        'attachments' => 'Attachments',
+        'creditinvoices' => 'CreditInvoices',
+        'creditors' => 'Creditors',
+        'debtors' => 'Debtors',
+        'domains' => 'Domains',
+        'groups' => 'Groups',
+        'handles' => 'Handles',
+        'hosting' => 'Hosting',
+        'invoices' => 'Invoices',
+        'orders' => 'Orders',
+        'pricequotes' => 'PriceQuotes',
+        'products' => 'Products',
+        'services' => 'Services',
+        'ssl' => 'Ssl',
+        'tickets' => 'Tickets',
+        'vps' => 'Vps',
     ];
 
     /**
