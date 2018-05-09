@@ -48,7 +48,7 @@ class HttpClient implements HttpClientInterface
             ]
         );
 
-        return json_decode((string) $response->getBody());
+        return json_decode((string) $response->getBody(), true);
     }
 
     /**
