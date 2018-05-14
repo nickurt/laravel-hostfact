@@ -38,6 +38,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->publishes([
             __DIR__.'/../config/hostfact.php' => config_path('hostfact.php')
         ], 'config');
+
+        \Auth::provider('hostfact', function ($app, array $config) {
+            return new \nickurt\HostFact\Providers\HostFactProvider();
+        });
     }
 
     /**

@@ -1,4 +1,5 @@
 ## Laravel HostFact
+HostFact is an easy-to-use billing and automation solution for hosting companies
 ### Table of contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -8,7 +9,7 @@ Install this package with composer:
 ```
 composer require nickurt/laravel-hostfact:1.*
 ```
-Add the provider to config/app.php file
+Add the provider to `config/app.php` file
 ```php
 'nickurt\HostFact\ServiceProvider',
 ```
@@ -20,13 +21,61 @@ Copy the config files for the HostFact-plugin
 ```
 php artisan vendor:publish --provider="nickurt\HostFact\ServiceProvider" --tag="config"
 ```
-Add the HostFact credentials to your .env file
+Add the HostFact credentials to your `.env` file
 ```
 HOSTFACT_DEFAULT_URL=
 HOSTFACT_DEFAULT_KEY=
 ```
 ### Usage
-#### Dependency injection [e.g. by using multiple panels]
+#### Authentication [debtors]
+It's possible to use a custom `hostfact` authentication driver to login debtors in your application, by default the UserProfile will be cached for 60 minutes
+```php
+// config/auth.php
+'providers' => [
+    'hostfact' => [
+        'driver' => 'hostfact'
+    ],
+]
+
+// Auth::attempt
+if(Auth::attempt(['username' => $username, 'password' => $password]))
+{
+    dd(Auth::user(), Auth::id());
+}
+```
+#### Multiple Panels [config]
+If you want to work with more HostFact panels, you can define more panels in the `config/hostfact.php` file
+```php
+// config/hostfact.php
+'panels' => [
+
+    'default' => [
+        'url' => env('HOSTFACT_DEFAULT_URL'),
+        'key' => env('HOSTFACT_DEFAULT_KEY'),
+    ],
+
+    'ppe' => [
+        'url' => env('HOSTFACT_PPE_URL'),
+        'key' => env('HOSTFACT_PPE_KEY'),
+    ],
+
+],
+```
+#### Multiple Panels [normal usage]
+To use another panel than your default one, you can specify it with the panel-method
+```php
+// DebtorsController
+public function getIndex()
+{
+    $debtors = \HostFact::panel('ppe')->debtors()->all([
+        'Sort' => 'DebtorCode',
+        'limit' => 20
+    ]);
+
+    //
+}
+```
+#### Multiple Panels [dependency injection]
 ```php
 // Route
 Route::get('/hostfact/{hostFact}/debtors', ['as' => 'hostfact/debtors', 'uses' => 'DebtorsController@getIndex']);
