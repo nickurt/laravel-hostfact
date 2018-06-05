@@ -7,7 +7,7 @@ class Orders extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function add($params)
     {
@@ -17,7 +17,7 @@ class Orders extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function delete($params)
     {
@@ -27,7 +27,7 @@ class Orders extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function edit($params)
     {
@@ -37,7 +37,7 @@ class Orders extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function list($params)
     {
@@ -47,7 +47,7 @@ class Orders extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function process($params)
     {
@@ -57,7 +57,7 @@ class Orders extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function show($params)
     {

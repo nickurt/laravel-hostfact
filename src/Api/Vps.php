@@ -7,7 +7,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function add($params)
     {
@@ -17,7 +17,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function create($params)
     {
@@ -27,7 +27,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function downloadAccountData($params)
     {
@@ -37,7 +37,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function edit($params)
     {
@@ -47,7 +47,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function list($params)
     {
@@ -57,7 +57,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function pause($params)
     {
@@ -67,7 +67,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function restart($params)
     {
@@ -77,7 +77,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function sendAccountDataByEmail($params)
     {
@@ -87,7 +87,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function show($params)
     {
@@ -97,7 +97,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function start($params)
     {
@@ -107,7 +107,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function suspend($params)
     {
@@ -117,7 +117,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function terminate($params)
     {
@@ -127,7 +127,7 @@ class Vps extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function unsuspend($params)
     {

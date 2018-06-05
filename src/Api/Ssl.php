@@ -7,7 +7,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function add($params)
     {
@@ -17,7 +17,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function download($params)
     {
@@ -27,7 +27,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function edit($params)
     {
@@ -37,7 +37,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function getStatus($params)
     {
@@ -47,7 +47,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function installed($params)
     {
@@ -57,7 +57,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function list($params)
     {
@@ -67,7 +67,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function reissue($params)
     {
@@ -77,7 +77,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function renew($params)
     {
@@ -87,7 +87,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function request($params)
     {
@@ -97,7 +97,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function resendApproverMail($params)
     {
@@ -107,7 +107,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function revoke($params)
     {
@@ -117,7 +117,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function show($params)
     {
@@ -127,7 +127,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function terminate($params)
     {
@@ -137,7 +137,7 @@ class Ssl extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function uninstalled($params)
     {

@@ -7,7 +7,7 @@ class Tickets extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function add($params)
     {
@@ -17,7 +17,7 @@ class Tickets extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function addMessage($params)
     {
@@ -35,7 +35,7 @@ class Tickets extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function changeOwner($params)
     {
@@ -45,7 +45,7 @@ class Tickets extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function changeStatus($params)
     {
@@ -55,7 +55,7 @@ class Tickets extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function delete($params)
     {
@@ -65,7 +65,7 @@ class Tickets extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function edit($params)
     {
@@ -75,7 +75,7 @@ class Tickets extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function list($params)
     {
@@ -85,7 +85,7 @@ class Tickets extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function show($params)
     {

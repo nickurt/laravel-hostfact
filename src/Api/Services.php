@@ -7,7 +7,7 @@ class Services extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function add($params)
     {
@@ -17,7 +17,7 @@ class Services extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function edit($params)
     {
@@ -27,7 +27,7 @@ class Services extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function list($params)
     {
@@ -37,7 +37,7 @@ class Services extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function show($params)
     {
@@ -47,7 +47,7 @@ class Services extends AbstractApi
     /**
      * @param $params
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     public function terminate($params)
     {

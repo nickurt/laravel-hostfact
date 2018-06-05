@@ -23,7 +23,7 @@ abstract class AbstractApi implements ApiInterface
     /**
      * @param $parameters
      * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Http\Client\Exception
      */
     protected function post($parameters)
     {
