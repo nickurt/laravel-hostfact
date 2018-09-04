@@ -7,7 +7,7 @@ HostFact is an easy-to-use billing and automation solution for hosting companies
 ### Installation
 Install this package with composer:
 ```
-composer require nickurt/laravel-hostfact:1.*
+composer require nickurt/laravel-hostfact
 ```
 Add the provider to `config/app.php` file
 ```php
