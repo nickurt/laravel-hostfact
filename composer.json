@@ -1,14 +1,14 @@
 {
     "name": "nickurt/laravel-hostfact",
-    "description": "HostFact for Laravel 5",
+    "description": "HostFact for Laravel 5.8",
     "keywords": ["hostfact", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.1.3",
-        "laravel/framework": "5.7.*"
+        "php": "^7.2",
+        "laravel/framework": "5.8.*"
     },
     "require-dev": {
-        "phpunit/phpunit" : "^6.2|^7.0"
+        "phpunit/phpunit" : "^7.5"
     },
     "autoload": {
         "psr-4": {
@@ -19,6 +19,7 @@
         ]
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [

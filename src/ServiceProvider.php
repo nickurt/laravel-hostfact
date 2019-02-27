@@ -5,11 +5,30 @@ namespace nickurt\HostFact;
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
-     * Indicates if loading of the provider is deferred.
+     * Bootstrap the application events.
      *
-     * @var bool
+     * @return void
      */
-    protected $defer = false;
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/../config/hostfact.php' => config_path('hostfact.php')
+        ], 'config');
+
+        \Auth::provider('hostfact', function ($app, array $config) {
+            return new \nickurt\HostFact\Providers\HostFactProvider();
+        });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return ['nickurt\HostFact\HostFact', 'HostFact'];
+    }
 
     /**
      * Register the service provider.
@@ -26,31 +45,5 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         });
 
         $this->app->alias('nickurt\HostFact\HostFact', 'HostFact');
-    }
-
-    /**
-     * Bootstrap the application events.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        $this->publishes([
-            __DIR__.'/../config/hostfact.php' => config_path('hostfact.php')
-        ], 'config');
-
-        \Auth::provider('hostfact', function ($app, array $config) {
-            return new \nickurt\HostFact\Providers\HostFactProvider();
-        });
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return ['nickurt\HostFact\HostFact', 'HostFact'];
     }
 }
