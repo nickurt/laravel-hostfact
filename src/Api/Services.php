@@ -5,6 +5,7 @@ namespace nickurt\HostFact\Api;
 class Services extends AbstractApi
 {
     /**
+     * @see https://www.hostfact.nl/developer/api/overige-diensten/add
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -15,6 +16,7 @@ class Services extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/overige-diensten/edit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -25,6 +27,7 @@ class Services extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/overige-diensten/list
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -35,6 +38,7 @@ class Services extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/overige-diensten/show
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -45,6 +49,7 @@ class Services extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/overige-diensten/terminate
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException

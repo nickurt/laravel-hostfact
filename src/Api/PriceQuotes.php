@@ -5,6 +5,7 @@ namespace nickurt\HostFact\Api;
 class PriceQuotes extends AbstractApi
 {
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/accept
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -15,6 +16,7 @@ class PriceQuotes extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/add
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -25,14 +27,18 @@ class PriceQuotes extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/attachment-add
+     * @see https://www.hostfact.nl/developer/api/offertes/attachment-delete
+     * @see https://www.hostfact.nl/developer/api/offertes/attachment-download
      * @return Attachments
      */
     public function attachments()
     {
-        return new \nickurt\HostFact\Api\Attachments($this);
+        return new \nickurt\HostFact\Api\Attachments($this->client);
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/decline
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -43,6 +49,7 @@ class PriceQuotes extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/delete
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -53,6 +60,7 @@ class PriceQuotes extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/download
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -63,6 +71,7 @@ class PriceQuotes extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/edit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -73,6 +82,17 @@ class PriceQuotes extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/pricequoteline-add
+     * @see https://www.hostfact.nl/developer/api/offertes/pricequoteline-delete
+     * @return PriceQuotesLine
+     */
+    public function line()
+    {
+        return new \nickurt\HostFact\Api\PriceQuotesLine($this->client);
+    }
+
+    /**
+     * @see https://www.hostfact.nl/developer/api/offertes/list
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -83,6 +103,7 @@ class PriceQuotes extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/sendbyemail
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -93,6 +114,7 @@ class PriceQuotes extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/offertes/show
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException

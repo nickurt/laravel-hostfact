@@ -4,22 +4,35 @@ namespace nickurt\HostFact\HttpClient;
 
 class HttpClient implements HttpClientInterface
 {
-    /**
-     * @var \GuzzleHttp\Client
-     */
+    /** @var \GuzzleHttp\Client */
     protected $client;
 
-    /**
-     * @var array
-     */
+    /** @var array */
     protected $options = [];
 
     /**
-     * HttpClient constructor.
+     * @return \GuzzleHttp\Client
      */
-    public function __construct()
+    public function getClient()
     {
-        $this->client = new \GuzzleHttp\Client();
+        if (!isset($this->client)) {
+            $this->client = new \GuzzleHttp\Client();
+
+            return $this->client;
+        }
+
+        return $this->client;
+    }
+
+    /**
+     * @param $client
+     * @return \GuzzleHttp\Client
+     */
+    public function setClient($client)
+    {
+        $this->client = $client;
+
+        return $this->client;
     }
 
     /**
@@ -48,7 +61,7 @@ class HttpClient implements HttpClientInterface
             ]
         );
 
-        return json_decode((string) $response->getBody(), true);
+        return json_decode((string)$response->getBody(), true);
     }
 
     /**

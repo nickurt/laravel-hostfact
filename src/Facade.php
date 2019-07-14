@@ -2,6 +2,9 @@
 
 namespace nickurt\HostFact;
 
+/**
+ * @method static \nickurt\HostFact\Api\Debtors debtors()
+ */
 class Facade extends \Illuminate\Support\Facades\Facade
 {
     /**

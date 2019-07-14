@@ -5,6 +5,7 @@ namespace nickurt\HostFact\Api;
 class Hosting extends AbstractApi
 {
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/add
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -15,6 +16,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/create
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -25,6 +27,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/delete
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -35,6 +38,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/edit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -45,6 +49,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/getdomainlist
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -55,6 +60,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/list
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -65,6 +71,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/removefromserver
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -75,6 +82,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/sendaccountinfobyemail
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -85,6 +93,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/show
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -95,6 +104,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/suspend
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -105,6 +115,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/terminate
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -115,6 +126,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/unsuspend
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -125,6 +137,7 @@ class Hosting extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/hosting/updowngrade
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException

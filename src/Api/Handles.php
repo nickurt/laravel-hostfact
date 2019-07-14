@@ -5,6 +5,7 @@ namespace nickurt\HostFact\Api;
 class Handles extends AbstractApi
 {
     /**
+     * @see https://www.hostfact.nl/developer/api/domein-contacten/add
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -15,6 +16,7 @@ class Handles extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/domein-contacten/delete
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -25,6 +27,7 @@ class Handles extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/domein-contacten/edit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -35,6 +38,7 @@ class Handles extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/domein-contacten/list
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -45,6 +49,7 @@ class Handles extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/domein-contacten/listdomain
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -55,6 +60,7 @@ class Handles extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/domein-contacten/show
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException

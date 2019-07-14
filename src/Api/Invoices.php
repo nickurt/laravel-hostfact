@@ -5,6 +5,7 @@ namespace nickurt\HostFact\Api;
 class Invoices extends AbstractApi
 {
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/add
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -15,14 +16,18 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/attachment-add
+     * @see https://www.hostfact.nl/developer/api/facturen/attachment-delete
+     * @see https://www.hostfact.nl/developer/api/facturen/attachment-download
      * @return Attachments
      */
     public function attachments()
     {
-        return new \nickurt\HostFact\Api\Attachments($this);
+        return new \nickurt\HostFact\Api\Attachments($this->client);
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/block
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -33,6 +38,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/cancelschedule
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -43,6 +49,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/credit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -53,6 +60,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/delete
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -63,6 +71,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/download
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -73,6 +82,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/edit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -83,6 +93,17 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/invoiceline-add
+     * @see https://www.hostfact.nl/developer/api/facturen/invoiceline-delete
+     * @return InvoicesLine
+     */
+    public function line()
+    {
+        return new \nickurt\HostFact\Api\InvoicesLine($this->client);
+    }
+
+    /**
+     * @see https://www.hostfact.nl/developer/api/facturen/list
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -93,6 +114,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/markaspaid
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -103,6 +125,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/markasunpaid
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -113,6 +136,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/partpayment
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -123,6 +147,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/paymentprocesspause
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -133,6 +158,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/paymentprocessreactivate
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -143,6 +169,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/schedule
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -153,6 +180,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/sendbyemail
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -163,6 +191,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/sendreminderbyemail
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -173,6 +202,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/sendsummationbyemail
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -183,6 +213,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/show
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -193,6 +224,7 @@ class Invoices extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/facturen/unblock
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException

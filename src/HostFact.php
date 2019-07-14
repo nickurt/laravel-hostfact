@@ -4,20 +4,14 @@ namespace nickurt\HostFact;
 
 class HostFact
 {
-    /**
-     * @var
-     */
+    /** @var \Illuminate\Foundation\Application */
     protected $app;
 
-    /**
-     * @var array
-     */
-    protected $panels = [];
-
-    /**
-     * @var
-     */
+    /** @var \nickurt\HostFact\Client */
     protected $client;
+
+    /** @var array */
+    protected $panels = [];
 
     /**
      * HostFact constructor.
@@ -39,8 +33,8 @@ class HostFact
     }
 
     /**
-     * @param null $name
-     * @return Api\Client
+     * @param null|string $name
+     * @return \nickurt\HostFact\Client
      */
     public function panel($name = null)
     {
@@ -50,7 +44,7 @@ class HostFact
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getDefaultPanel()
     {
@@ -58,8 +52,8 @@ class HostFact
     }
 
     /**
-     * @param $name
-     * @return Api\Client
+     * @param string $name
+     * @return \nickurt\HostFact\Client
      */
     protected function get($name)
     {
@@ -67,8 +61,8 @@ class HostFact
     }
 
     /**
-     * @param $name
-     * @return Client
+     * @param string $name
+     * @return \nickurt\HostFact\Client
      */
     protected function resolve($name)
     {
@@ -84,8 +78,8 @@ class HostFact
     }
 
     /**
-     * @param $name
-     * @return mixed
+     * @param string $name
+     * @return array
      */
     protected function getConfig($name)
     {

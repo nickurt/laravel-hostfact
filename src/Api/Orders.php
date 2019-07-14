@@ -5,6 +5,7 @@ namespace nickurt\HostFact\Api;
 class Orders extends AbstractApi
 {
     /**
+     * @see https://www.hostfact.nl/developer/api/bestellingen/add
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -15,6 +16,7 @@ class Orders extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/bestellingen/delete
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -25,6 +27,7 @@ class Orders extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/bestellingen/edit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -35,6 +38,17 @@ class Orders extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/bestellingen/orderline-add
+     * @see https://www.hostfact.nl/developer/api/bestellingen/orderline-delete
+     * @return OrdersLine
+     */
+    public function line()
+    {
+        return new \nickurt\HostFact\Api\OrdersLine($this->client);
+    }
+
+    /**
+     * @see https://www.hostfact.nl/developer/api/bestellingen/list
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -45,6 +59,7 @@ class Orders extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/bestellingen/process
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -55,6 +70,7 @@ class Orders extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/bestellingen/show
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException

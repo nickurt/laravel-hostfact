@@ -5,6 +5,7 @@ namespace nickurt\HostFact\Api;
 class Tickets extends AbstractApi
 {
     /**
+     * https://www.hostfact.nl/developer/api/tickets/add
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -15,6 +16,7 @@ class Tickets extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/tickets/addmessage
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -25,14 +27,16 @@ class Tickets extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/tickets/attachment-download
      * @return Attachments
      */
     public function attachments()
     {
-        return new \nickurt\HostFact\Api\Attachments($this);
+        return new \nickurt\HostFact\Api\Attachments($this->client);
     }
 
     /**
+     * https://www.hostfact.nl/developer/api/tickets/changeowner
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -43,6 +47,7 @@ class Tickets extends AbstractApi
     }
 
     /**
+     * https://www.hostfact.nl/developer/api/tickets/changestatus
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -53,6 +58,7 @@ class Tickets extends AbstractApi
     }
 
     /**
+     * https://www.hostfact.nl/developer/api/tickets/delete
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -63,6 +69,7 @@ class Tickets extends AbstractApi
     }
 
     /**
+     * https://www.hostfact.nl/developer/api/tickets/edit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -73,6 +80,7 @@ class Tickets extends AbstractApi
     }
 
     /**
+     * https://www.hostfact.nl/developer/api/tickets/list
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -83,6 +91,7 @@ class Tickets extends AbstractApi
     }
 
     /**
+     * https://www.hostfact.nl/developer/api/tickets/show
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException

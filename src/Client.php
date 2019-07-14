@@ -2,18 +2,11 @@
 
 namespace nickurt\HostFact;
 
-use \nickurt\HostFact\HttpClient\HttpClient;
+use nickurt\HostFact\HttpClient\HttpClient;
 
 class Client
 {
-    /**
-     * @var
-     */
-    protected $httpClient;
-
-    /**
-     * @var array
-     */
+    /** @var array */
     protected $classes = [
         'attachments' => 'Attachments',
         'creditinvoices' => 'CreditInvoices',
@@ -33,9 +26,10 @@ class Client
         'vps' => 'Vps',
     ];
 
-    /**
-     * @var array
-     */
+    /** @var \nickurt\HostFact\HttpClient */
+    protected $httpClient;
+
+    /** @var array */
     protected $options = [];
 
     /**

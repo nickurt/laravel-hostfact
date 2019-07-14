@@ -6,14 +6,12 @@ use nickurt\HostFact\Client;
 
 abstract class AbstractApi implements ApiInterface
 {
-    /**
-     * @var Client
-     */
+    /** @var \nickurt\HostFact\Client */
     public $client;
 
     /**
      * AbstractApi constructor.
-     * @param Client $client
+     * @param \nickurt\HostFact\Client $client
      */
     public function __construct(Client $client)
     {
@@ -21,7 +19,7 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * @param $parameters
+     * @param array $parameters
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
      */

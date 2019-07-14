@@ -5,6 +5,7 @@ namespace nickurt\HostFact\Api;
 class Products extends AbstractApi
 {
     /**
+     * @see https://www.hostfact.nl/developer/api/producten/add
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -15,6 +16,7 @@ class Products extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/producten/delete
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -25,6 +27,7 @@ class Products extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/producten/edit
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -35,6 +38,7 @@ class Products extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/producten/list
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -45,6 +49,7 @@ class Products extends AbstractApi
     }
 
     /**
+     * @see https://www.hostfact.nl/developer/api/producten/show
      * @param $params
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
