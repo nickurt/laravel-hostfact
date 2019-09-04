@@ -14,14 +14,6 @@ Install this package with composer:
 ```
 composer require nickurt/laravel-hostfact
 ```
-Add the provider to `config/app.php` file
-```php
-'nickurt\HostFact\ServiceProvider',
-```
-and the facade in the file
-```php
-'HostFact' => 'nickurt\HostFact\Facade',
-```
 Copy the config files for the HostFact-plugin
 ```
 php artisan vendor:publish --provider="nickurt\HostFact\ServiceProvider" --tag="config"
