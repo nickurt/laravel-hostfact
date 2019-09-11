@@ -53,7 +53,7 @@ class HttpClient implements HttpClientInterface
      */
     public function request($body, $method)
     {
-        $response = $this->client->request(
+        $response = $this->getClient()->request(
             $method,
             $this->getOptions()['base_url'],
             [
