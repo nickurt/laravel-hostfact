@@ -17,6 +17,7 @@ class Client
         'handles' => 'Handles',
         'hosting' => 'Hosting',
         'invoices' => 'Invoices',
+        'invoiceline' => 'InvoicesLine',
         'orders' => 'Orders',
         'pricequotes' => 'PriceQuotes',
         'products' => 'Products',
