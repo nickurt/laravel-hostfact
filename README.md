@@ -1,8 +1,8 @@
 ## Laravel HostFact
-[![Latest Stable Version](https://poser.pugx.org/nickurt/laravel-hostfact/v/stable?format=flat-square)](https://packagist.org/packages/nickurt/laravel-hostfact)
-[![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/nickurt/laravel-hostfact/master.svg?style=flat-square)](https://travis-ci.org/nickurt/laravel-hostfact)
-[![Total Downloads](https://img.shields.io/packagist/dt/nickurt/laravel-hostfact.svg?style=flat-square)](https://packagist.org/packages/nickurt/laravel-hostfact)
+[![Build Status](https://github.com/nickurt/laravel-hostfact/workflows/tests/badge.svg)](https://github.com/nickurt/laravel-hostfact/actions)
+[![Total Downloads](https://poser.pugx.org/nickurt/laravel-hostfact/d/total.svg)](https://packagist.org/packages/nickurt/laravel-hostfact)
+[![Latest Stable Version](https://poser.pugx.org/nickurt/laravel-hostfact/v/stable.svg)](https://packagist.org/packages/nickurt/laravel-hostfact)
+[![MIT Licensed](https://poser.pugx.org/nickurt/laravel-hostfact/license.svg)](LICENSE.md)
 
 HostFact is an easy-to-use billing and automation solution for hosting companies
 ### Table of contents
